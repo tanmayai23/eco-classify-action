@@ -1,8 +1,27 @@
-# Welcome to your Lovable project
+# Eco-Classify: E-Waste Management System
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/6638a9b6-e665-4753-8955-aceae4175e03
+Eco-Classify is an application that helps users identify and properly dispose of electronic waste (e-waste). The application uses Google's Gemini AI to classify uploaded images of electronic devices and provides information on how to properly recycle or dispose of them.
+
+**Original Project URL**: https://lovable.dev/projects/6638a9b6-e665-4753-8955-aceae4175e03
+
+## Setting Up Gemini API
+
+To use the image classification feature, you need to set up a Gemini API key:
+
+1. Go to [Google AI Studio](https://ai.google.dev/)
+2. Sign in with your Google account
+3. Navigate to the API keys section
+4. Create a new API key
+5. Copy the `.env.example` file to `.env`
+   ```bash
+   cp .env.example .env
+   ```
+6. Add your API key to the `.env` file
+   ```
+   VITE_GEMINI_API_KEY=your_gemini_api_key_here
+   ```
 
 ## How can I edit this code?
 
@@ -59,6 +78,15 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Google Gemini AI for image classification
+- React Router for navigation
+
+## Features
+
+- **Image Classification**: Upload images of electronic devices to identify what type of e-waste they are
+- **AI-Powered Analysis**: Utilizes Google's Gemini AI for accurate classification
+- **Disposal Information**: Get information on how to properly dispose of your e-waste
+- **Recycling Centers**: Find nearby recycling centers that accept your type of e-waste
 
 ## How can I deploy this project?
 
